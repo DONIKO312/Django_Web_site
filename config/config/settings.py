@@ -10,9 +10,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s#f1318*v#$%!*72@%qtb7-=u=fa*u^27m_1tg72%@_b7=axyk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://newsnewsnewsnews.netlify.app/']
 
 # Application definition
 

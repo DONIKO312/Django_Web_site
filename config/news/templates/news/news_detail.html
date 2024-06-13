@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+
+{% block title %}{{ news.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ news.title }}</h1>
+    {% if news.image %}
+        <img src="{{ news.image.url }}" alt="{{ news.title }}" style="max-width:100%; height:auto;">
+    {% endif %}
+    <p>{{ news.full_text }}</p>
+    <a href="{% url 'news_update' news.pk %}" class="btn btn-warning">Редактировать</a>
+    <a href="{% url 'news_delete' news.pk %}" class="btn btn-danger">Удалить</a>
+    <a href="{% url 'news_list' %}" class="btn btn-secondary">Назад к списку</a>
+{% endblock %}

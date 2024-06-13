@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+
+{% block title %}{% if form.instance.pk %}Редактировать запись{% else %}Создать новую запись{% endif %}{% endblock %}
+
+{% block content %}
+    <h1>{% if form.instance.pk %}Редактировать запись{% else %}Создать новую запись{% endif %}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.title.label_tag }}
+            {{ form.title }}
+        </div>
+        <div class="mb-3">
+            {{ form.anons.label_tag }}
+            {{ form.anons }}
+        </div>
+        <div class="mb-3">
+            {{ form.full_text.label_tag }}
+            {{ form.full_text }}
+        </div>
+        <div class="mb-3">
+            {{ form.date.label_tag }}
+            {{ form.date }}
+        </div>
+        <div class="mb-3">
+            {{ form.image.label_tag }}
+            {{ form.image }}
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+    <a href="{% url 'news_list' %}" class="btn btn-secondary mt-3">Назад к списку</a>
+{% endblock %}

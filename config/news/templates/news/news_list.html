@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Список записей{% endblock %}
+
+{% block content %}
+    <h1>Список записей</h1>
+    <a href="{% url 'news_create' %}" class="btn btn-primary mb-3">Создать новую запись</a>
+    <ul class="list-group">
+        {% for news_item in news %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    {% if news_item.image %}
+                        <img src="{{ news_item.image.url }}" alt="{{ news_item.title }}" style="max-width: 100px; margin-right: 10px;">
+                    {% endif %}
+                    <a href="{% url 'news_detail' news_item.pk %}">{{ news_item.title }}</a>
+                </div>
+                <div>
+                    <a href="{% url 'news_update' news_item.pk %}" class="btn btn-warning btn-sm">Редактировать</a>
+                    <a href="{% url 'news_delete' news_item.pk %}" class="btn btn-danger btn-sm">Удалить</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Про нас{% endblock %}
+
+{% block content %}
+<div class="about-section container mt-5">
+    <h1 class="text-center mb-5">О нашей компании</h1>
+    <p class="lead text-center mb-5">
+        Наша компания специализируется на предоставлении высококачественных услуг в своей отрасли. Мы гордимся нашей командой профессионалов, которая стремится к лучшим результатам и превосходит ожидания клиентов.
+    </p>
+
+    <h2 class="text-center mb-4">Наша команда</h2>
+    <div class="row">
+        <!-- Карточка сотрудника 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'media/news_images/top.jpg' %}" alt="Сотрудник 1" class="card-img-top rounded-circle p-3" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h3>Мария Иванова</h3>
+                    <h5 class="text-muted">Директор по развитию</h5>
+                    <p>Мария возглавляет отдел развития и отвечает за стратегическое планирование и улучшение бизнес-процессов. Она присоединилась к нашей команде в 2015 году и с тех пор успешно ведет множество проектов.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка сотрудника 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'main/img/employee2.jpg' %}" alt="Сотрудник 2" class="card-img-top rounded-circle p-3" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h3>Алексей Смирнов</h3>
+                    <h5 class="text-muted">Технический директор</h5>
+                    <p>Алексей отвечает за внедрение и поддержку технологических решений. Его опыт в IT помогает нам поддерживать высокие стандарты качества и эффективности в работе.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточка сотрудника 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'main/img/employee3.jpg' %}" alt="Сотрудник 3" class="card-img-top rounded-circle p-3" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h3>Ольга Петрова</h3>
+                    <h5 class="text-muted">Руководитель отдела продаж</h5>
+                    <p>Ольга руководит отделом продаж и обеспечивает непрерывное увеличение клиентской базы. Она имеет глубокое понимание рынка и умеет строить долгосрочные отношения с клиентами.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mb-4">Наша миссия и ценности</h2>
+    <p class="text-center">
+        Мы стремимся к достижению совершенства в нашей работе, поддерживая высокие стандарты качества и удовлетворенности клиентов. Наша миссия — создавать устойчивые и инновационные решения, которые помогают нашим клиентам достигать их целей.
+    </p>
+</div>
+{% endblock %}

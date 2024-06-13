@@ -1,0 +1,488 @@
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;  /* 'with' изменено на 'width' */
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;  /* 'with' изменено на 'width' */
+    float: left;
+}
+
+aside .logo {
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    font-size: 30px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform 0.6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #ed5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+   color: #fff;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    with: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+.text-box {
+    border: 2px solid #000; /* Черная рамка */
+    padding: 10px; /* Внутренний отступ */
+    margin: 10px 0; /* Отступ сверху и снизу */
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.content-wrapper {
+    border: 2px solid #ccc; /* Задайте цвет и толщину рамки */
+    padding: 20px; /* Добавьте отступы внутри рамки */
+    display: flex; /* Сделайте содержимое гибким */
+    align-items: center; /* Вертикально центрируйте элементы */
+    justify-content: center; /* Горизонтально центрируйте элементы */
+    max-width: 600px; /* Установите максимальную ширину контейнера */
+    margin: auto; /* Центрируйте контейнер на странице */
+    background-color: #f9f9f9; /* Добавьте фон, если нужно */
+    border-radius: 10px; /* Сделайте углы рамки скругленными */
+}
+.content-wrapper img {
+    max-width: 100px; /* Задайте максимальную ширину изображения */
+    height: auto; /* Сохраните пропорции изображения */
+    margin-right: 20px; /* Добавьте отступ справа от изображения */
+}
+
+/* Добавьте этот CSS в ваш файл стилей */
+
+.square-image {
+    width: 200px; /* Установите желаемую ширину квадрата */
+    height: 200px; /* Установите ту же высоту, чтобы сделать изображение квадратным */
+    object-fit: cover; /* Масштабирование изображения, чтобы оно заполнило элемент, сохраняя соотношение сторон */
+    display: block; /* Убедитесь, что изображение ведет себя как блок */
+    margin: 0 auto 10px; /* Центрируем изображение и добавляем отступ снизу */
+    border-radius: 10px; /* Если нужно, добавьте скругленные углы */
+}
+.logo {
+    width: 100px;  /* Настройте ширину по вашему желанию */
+    height: 100px; /* Настройте высоту по вашему желанию */
+    border-radius: 50%; /* Делает изображение круглым */
+    object-fit: cover; /* Подгоняет изображение по размеру контейнера */
+    overflow: hidden; /* Обрезает излишки изображения */
+    border: 2px solid #ccc; /* Опционально: рамка вокруг логотипа */
+}
+/* main/css/main.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5; /* Более приятный цвет фона */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.sidebar img {
+    display: block;
+    width: 60px; /* Уменьшение размера логотипа */
+    height: 60px; /* Круглый логотип */
+    border-radius: 50%; /* Круглый логотип */
+    margin: 0 auto 20px; /* Центрирование и отступ снизу */
+}
+
+.content {
+    margin-left: 220px; /* Соответствует ширине боковой панели */
+    padding: 20px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Добавлено расстояние снизу */
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Увеличено расстояние снизу */
+    font-size: 24px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Круглый логотип */
+    margin-bottom: 20px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 50px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    color: #E1306C; /* Instagram цвет по умолчанию */
+}
+
+.social-icon:nth-child(2) i {
+    color: #0088cc; /* Telegram цвет по умолчанию */
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map h2 {
+    margin-bottom: 10px;
+}
+/* main/css/main.css */
+.about-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-section .card {
+    border: none;
+}
+
+.about-section .card-img-top {
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.about-section .card-body {
+    text-align: center;
+}
+
+.about-section .card-body h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-section .card-body h5 {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.about-section .card-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+/* main/css/main.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5; /* Более приятный цвет фона */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.sidebar img {
+    display: block;
+    width: 60px; /* Уменьшение размера логотипа */
+    height: 60px; /* Круглый логотип */
+    border-radius: 50%; /* Круглый логотип */
+    margin: 0 auto 20px; /* Центрирование и отступ снизу */
+}
+
+.content {
+    margin-left: 220px; /* Соответствует ширине боковой панели */
+    padding: 20px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Добавлено расстояние снизу */
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Увеличено расстояние снизу */
+    font-size: 24px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Круглый логотип */
+    margin-bottom: 20px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 50px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    color: #E1306C; /* Instagram цвет по умолчанию */
+}
+
+.social-icon:nth-child(2) i {
+    color: #0088cc; /* Telegram цвет по умолчанию */
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map h2 {
+    margin-bottom: 10px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-section .card {
+    border: none;
+}
+
+.about-section .card-img-top {
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.about-section .card-body {
+    text-align: center;
+}
+
+.about-section .card-body h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-section .card-body h5 {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.about-section .card-body p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}

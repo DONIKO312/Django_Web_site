@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -12,7 +13,8 @@ SECRET_KEY = 'django-insecure-s#f1318*v#$%!*72@%qtb7-=u=fa*u^27m_1tg72%@_b7=axyk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://newsnewsnewsnews.netlify.app/']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+
 
 # Application definition
 
@@ -99,7 +101,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 # Path to directories with static files (outside apps)
 STATICFILES_DIRS = [
@@ -107,7 +109,7 @@ STATICFILES_DIRS = [
 ]
 
 # Path for collected static files (when using collectstatic)
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Media files (uploaded by users)
 MEDIA_URL = '/media/'
@@ -117,3 +119,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
